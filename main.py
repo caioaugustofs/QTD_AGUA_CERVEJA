@@ -1,5 +1,5 @@
 from calc_aguaCerveja import CalculadoraAguaCerveja
-from tools.printer import printInfo
+from tools.printer import printInfo, printInfoInput
 
 lc = 20
 rzm = 2.5
@@ -21,7 +21,7 @@ cev = CalculadoraAguaCerveja(
 
 cev = cev.getinfo()
 
-
+printInfoInput(ltc=lc)
 printInfo(ltc=lc,
           agua_mostura=cev['agua_mostura'], 
           agua_lavagem=cev['agua_lavagem'], 

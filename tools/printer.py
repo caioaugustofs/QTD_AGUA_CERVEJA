@@ -1,13 +1,23 @@
 
 
-
-def printInfo(ltc,agua_mostura,agua_lavagem, perdas, agua_total) -> None:
-
+def printInfoInput(ltc):
     i = f"""
 
 {'__' * 40}
 
     Volume final esperado: {ltc} litor
+    Razão água/malte
+
+    """
+    print(i)
+
+
+def printInfo(ltc, agua_mostura,agua_lavagem, perdas, agua_total) -> None:
+
+    i = f"""
+
+{'__' * 40}
+
 
     Água de Mostura: | {agua_mostura} Litro
     Água de Lavagem: | {agua_lavagem} Litro
