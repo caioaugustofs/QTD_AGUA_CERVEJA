@@ -6,7 +6,7 @@ class CalculadoraAguaCerveja:
     pela temperatura.
 
     Args:
-        lc (float): Litros de cerveja final em Litro.
+        ltc (float): Litros de cerveja final em Litro.
         rzm (float): Razão água/malte.
         qMalte (float): Quantidade de malte em Kg.
         absMalte (float): Absorção do malte em L/kg.
@@ -24,7 +24,7 @@ class CalculadoraAguaCerveja:
 
     def __init__(
         self,
-        lc: float,
+        ltc: float,
         rzm: float,
         qMalte: float,
         absMalte: float,
@@ -33,7 +33,7 @@ class CalculadoraAguaCerveja:
         trubF: float,
     ) -> None:
 
-        self.lc = lc  # Litros de cerveja Final esperados em Litro
+        self.ltc = ltc  # Litros de cerveja Final esperados em Litro
         self.rzm = rzm  # Razão Água Malte
         self.qMalte = qMalte  # Quantidade De Malte_Kg
         self.absMalte = absMalte  # Absorcao do malte L/kg
@@ -48,7 +48,7 @@ class CalculadoraAguaCerveja:
 
     def perdasContracao(self) -> float:
         """Calcula as perdas por contração pela temperatura."""
-        return (self.lc + self.evap + self.perdasTrubTotal()) * self.crontTemp
+        return (self.ltc + self.evap + self.perdasTrubTotal()) * self.crontTemp
 
     def perdasMalte(self):
         """Calcula as perdas por absorção do malte."""
@@ -86,7 +86,7 @@ class CalculadoraAguaCerveja:
             float: Água de lavagem em litros.
         """
 
-        return self.lc - self.aguaMostura() + self.perdas()
+        return self.ltc - self.aguaMostura() + self.perdas()
 
     def aguaTotal(self) -> float:
         """

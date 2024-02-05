@@ -1,31 +1,21 @@
 from calc_aguaCerveja import CalculadoraAguaCerveja
 from tools.printer import printInfo, printInfoInput
+from tools.inputer import inputInfo
 
-lc = 20
-rzm = 2.5
-qMalte = 5
-absMalte = 0.8
-evap = 4
-trubQ = 2
-trubF = 2.5
 
-cev = CalculadoraAguaCerveja(
-    lc=lc,
-    rzm=rzm,
-    qMalte=qMalte,
-    absMalte=absMalte,
-    evap=evap,
-    trubQ=trubQ,
-    trubF=trubF,
-)
+inf = inputInfo()
 
+
+cev = CalculadoraAguaCerveja(**inf)
 cev = cev.getinfo()
 
-printInfoInput(ltc=lc)
-printInfo(ltc=lc,
-          agua_mostura=cev['agua_mostura'], 
-          agua_lavagem=cev['agua_lavagem'], 
-          perdas=cev['perdas'], 
-          agua_total=cev['agua_total'], 
-          )
+printInfoInput(**inf)
 
+
+printInfo(
+    ltc=inf['ltc'],
+    agua_mostura=cev['agua_mostura'],
+    agua_lavagem=cev['agua_lavagem'],
+    perdas=cev['perdas'],
+    agua_total=cev['agua_total'],
+)

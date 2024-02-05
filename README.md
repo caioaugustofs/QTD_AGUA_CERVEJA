@@ -1,6 +1,6 @@
 ###QTD_AGUA_CERVEJA
 
-<h6> Calcular a quantidade de água necessária para produzir X litros de cerveja</h6>
+######Calcular a quantidade de água necessária para produzir X litros de cerveja
 
 ----
 Calcula a quantidade de água necessária para produção de cerveja,
