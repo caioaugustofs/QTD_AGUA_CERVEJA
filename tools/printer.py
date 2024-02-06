@@ -1,6 +1,7 @@
 def printInfoInput(ltc, rzm, qMalte, absMalte, evap, trubQ, trubF):
+
     i = f"""
-{'__' * 40}
+{'.=' * 40}
 
     Volume final esperado: | {ltc} litor
     Razão água/malte:      | {rzm}

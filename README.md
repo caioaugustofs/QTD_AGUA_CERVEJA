@@ -9,7 +9,7 @@ pela temperatura.
 
 ####Argumentos
 
-    lc (float): Litros de cerveja final em Litro.
+    lc (float): Litros de cerveja final.
     rzm (float): Razão água/malte.
     qMalte (float): Quantidade de malte em Kg.
     absMalte (float): Absorção do malte em L/kg.

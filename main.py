@@ -5,12 +5,10 @@ from tools.inputer import inputInfo
 
 inf = inputInfo()
 
-
 cev = CalculadoraAguaCerveja(**inf)
 cev = cev.getinfo()
 
 printInfoInput(**inf)
-
 
 printInfo(
     ltc=inf['ltc'],

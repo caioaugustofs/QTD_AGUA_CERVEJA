@@ -1,11 +1,12 @@
 def inputInfo():
-    ltc = 20
-    rzm = 2.5
-    qMalte = 5
-    absMalte = 0.8
-    evap = 4
-    trubQ = 2
-    trubF = 2.5
+
+    ltc = float(input('Litros de cerveja final esperado: '))
+    rzm = float(input('Razão água malte: '))
+    qMalte = float(input('Quantidade de malte em Kg: '))
+    absMalte = float(input('Absorção do malte em L/kg: '))
+    evap = float(input('Evaporação em litros: '))
+    trubQ = float(input('Trub quente em litro: '))
+    trubF = float(input('Trub frio em litros: '))
 
     return {
         'ltc': ltc,
