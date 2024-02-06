@@ -1,4 +1,12 @@
-def printInfoInput(ltc, rzm, qMalte, absMalte, evap, trubQ, trubF):
+def printInfoInput(
+    ltc: float,
+    rzm: float,
+    qMalte: float,
+    absMalte: float,
+    evap: float,
+    trubQ: float,
+    trubF: float,
+) -> None:
 
     i = f"""
 {'.=' * 40}
@@ -14,7 +22,13 @@ def printInfoInput(ltc, rzm, qMalte, absMalte, evap, trubQ, trubF):
     print(i)
 
 
-def printInfo(ltc, agua_mostura, agua_lavagem, perdas, agua_total) -> None:
+def printInfo(
+    ltc: float,
+    agua_mostura: float,
+    agua_lavagem: float,
+    perdas: float,
+    agua_total: float,
+) -> None:
 
     i = f"""
 {'__' * 40}
