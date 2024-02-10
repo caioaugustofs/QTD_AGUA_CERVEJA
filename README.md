@@ -1,13 +1,13 @@
-###QTD_AGUA_CERVEJA
+### QTD_AGUA_CERVEJA
 
-######Calcular a quantidade de água necessária para produzir X litros de cerveja
+###### Calcular a quantidade de água necessária para produzir X litros de cerveja
 
 ----
 Calcula a quantidade de água necessária para produção de cerveja,
 considerando perdas por evaporação, trub, absorção do malte e contração
 pela temperatura.
 
-####Argumentos
+#### Argumentos
 
     lc (float): Litros de cerveja final.
     rzm (float): Razão água/malte.
