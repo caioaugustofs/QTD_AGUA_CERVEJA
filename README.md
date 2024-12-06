@@ -25,16 +25,16 @@ pip install -r requirements.txt
 ```
 ### Uso
 ```sh
-from qtd_agua_cerveja import calcular
+from calc_aguaCerveja import CalculadoraAguaCerveja
 
-resultado = calcular(
-    lc=20.0, 
-    rzm=2.5, 
-    qMalte=5.0, 
-    absMalte=0.75, 
-    evap=2.0, 
-    trubQ=1.0, 
-    trubF=0.5
-)
+resultado = CalculadoraAguaCerveja(
+        ltc=20.0,
+        rzm=3.0,
+        qMalte=5.0,
+        absMalte=1.0,
+        evap=4.0,
+        trubQ=1.0,
+        trubF=1.0
+    )
+
 print(f"Quantidade de água necessária: {resultado} litros")
-```
